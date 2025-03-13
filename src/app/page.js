@@ -116,7 +116,7 @@ export default function Home() {
                     play();
                 }
 
-            }, 5000);
+            }, 10000);
 
             audioRef.current.addEventListener('canplaythrough', () => {
                 audioRef.current.play();
