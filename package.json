@@ -1,0 +1,33 @@
+{
+  "name": "radiogpt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@codyduong/ytmusicapi": "^0.4.6",
+    "@distube/ytdl-core": "^4.16.4",
+    "@steepleinc/youtubei.js": "^13.0.0",
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "libmuse": "^0.1.1",
+    "music-metadata": "^11.0.2",
+    "next": "15.2.2",
+    "node-youtube-music": "^0.10.3",
+    "openai": "^4.87.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "ruhend-scraper": "^9.0.0",
+    "s-ytdl": "^1.1.4",
+    "spotify-dl": "^1.1.2",
+    "spottydl-better": "^0.3.121",
+    "ytdl-core": "npm:@distube/ytdl-core@^4.16.4",
+    "ytmusic": "^0.0.9",
+    "ytmusic_api_unofficial": "^2.0.22",
+    "ytmusic-api": "^5.3.0"
+  }
+}
