@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
         audio.pipe(res)
     }catch(e){
-        res.status(500).json(e)
+        res.status(500).json({e})
     }
 
 
