@@ -1,4 +1,5 @@
 import ytdl from '@distube/ytdl-core';
+import { Readable } from 'stream';
 
 export default async function handler(req, res) {
     const { id } = req.query;
@@ -11,7 +12,8 @@ export default async function handler(req, res) {
             }
         })
 
-        audio.pipe(res)
+        const stream = Readable.from(audio);
+        stream.pipe(res);
     }catch(e){
         console.log(e)
         res.status(500).json({e})
