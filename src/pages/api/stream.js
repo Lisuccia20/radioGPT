@@ -1,11 +1,10 @@
 import ytdl from '@distube/ytdl-core'
-import fs from 'fs';
 import {HttpsProxyAgent} from 'https-proxy-agent';
 export default async function handler(req, res) {
     const { id } = req.query;
     const proxy = 'http://13.38.153.36';
 
-    const agent = ytdl.createProxyAgent(proxy);
+    const agent = ytdl.createProxyAgent({ uri: proxy});
 
     try {
         ytdl(`https://www.youtube.com/watch?v=${id}`, { agent }).pipe(res);
