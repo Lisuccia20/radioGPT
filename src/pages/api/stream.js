@@ -2,7 +2,7 @@ import ytdl from '@distube/ytdl-core'
 import {HttpsProxyAgent} from 'https-proxy-agent';
 export default async function handler(req, res) {
     const { id } = req.query;
-    const agent = ytdl.createProxyAgent({ uri: 'http://122.200.19.103'});
+    const agent = ytdl.createProxyAgent({ uri: 'http://3.10.93.50:80'});
     try {
 
 
