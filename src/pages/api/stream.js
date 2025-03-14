@@ -10,6 +10,7 @@ export default async function handler(req, res) {
         highWaterMark: 1 << 25, // 32MB
         // You can add custom headers to simulate a legitimate user (optional)
         requestOptions: {
+            proxy: 'http://13.38.153.36',
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
             }

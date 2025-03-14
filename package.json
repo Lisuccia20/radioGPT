@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@codyduong/ytmusicapi": "^0.4.6",
-    "@distube/ytdl-core": "^4.16.4",
+    "@distube/ytdl-core": "^4.15.9",
     "@steepleinc/youtubei.js": "^13.0.0",
     "axios": "^1.8.3",
     "dotenv": "^16.4.7",
