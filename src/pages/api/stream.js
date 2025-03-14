@@ -18,7 +18,10 @@ export default async function handler(req, res) {
 
     try {
         const agent = ytdl.createAgent(JSON.parse(fs.readFileSync("cookies.json")));
-        ytdl(`https://www.youtube.com/watch?v=${id}`,options).pipe(res);
+        ytdl(`https://www.youtube.com/watch?v=${id}`, {
+            agent: agent,
+            options: options,
+        }).pipe(res);
 
     } catch (e) {
         console.error("Error streaming the video:", e);
