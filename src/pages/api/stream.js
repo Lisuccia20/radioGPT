@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const { id } = req.query;
     const apiKey = process.env.NEXT_PUBLIC_YT_API_KEY;
     ytstream.setApiKey(apiKey);
-    ytstream.setPreference('scrape', 'ANDROID');
+    ytstream.setPreference('api', 'ANDROID');
 
     const agent = new ytstream.YTStreamAgent([], {
         localAddress: '127.0.0.1',
