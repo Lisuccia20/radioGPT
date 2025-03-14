@@ -3,7 +3,7 @@ import path from 'path';
 
 export default async function handler(req, res) {
     const { id } = req.query;
-    const cookiesPath = path.resolve('./cookies-firefox-private.txt');
+    const cookiesPath = path.resolve('./cookies.firefox-private.txt');
     try{
         const ytDlp = new YTDlpWrap('ytp-dlp-stream/binary');
         let readableStream = ytDlp.execStream([
