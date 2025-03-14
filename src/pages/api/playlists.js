@@ -1,8 +1,4 @@
 import axios from "axios";
-import ytdl from '@distube/ytdl-core';
-import { PassThrough } from 'stream';
-import { Buffer } from 'buffer';
-import { parseBuffer } from 'music-metadata';
 
 
 

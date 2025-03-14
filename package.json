@@ -27,6 +27,7 @@
     "spottydl-better": "^0.3.121",
     "youtube-audio-stream": "^0.3.61",
     "yt-dlp-wrap": "^2.3.12",
+    "yt-stream": "^1.7.4",
     "ytdl-core": "^4.11.5",
     "ytmusic": "^0.0.9",
     "ytmusic_api_unofficial": "^2.0.22",

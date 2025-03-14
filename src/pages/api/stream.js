@@ -1,17 +1,20 @@
-import YTDlpWrap from 'yt-dlp-wrap';
-import path from 'path';
+
+import ytstream from 'yt-stream';
+
 
 export default async function handler(req, res) {
     const { id } = req.query;
-    const cookiesPath = path.resolve('./cookies.txt');
+    const apiKey = process.env.NEXT_PUBLIC_YT_API_KEY;
+    ytstream.setApiKey(apiKey);
+    ytstream.setPreference('api', 'ANDROID');
     try{
-        const ytDlp = new YTDlpWrap('ytp-dlp-stream/binary');
-        let readableStream = ytDlp.execStream([
-            `https://www.youtube.com/watch?v=${id}`,
-            '-f --username radiogpt2@gmail.com --password Lisawow3',
-            'best[ext=mp4]'
-        ]);
-        readableStream.pipe(res);
+        const stream = await ytstream.stream(`https://www.youtube.com/watch?v=dQw4w9WgXcQ`, {
+            quality: 'high',
+            type: 'audio',
+            highWaterMark: 1048576 * 32,
+            download: true
+        });
+        stream.stream.pipe(res);
     }catch(e){
         console.log(e)
         res.status(500).json({e})
