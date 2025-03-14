@@ -10,7 +10,7 @@ export default async function handler(req, res) {
             `https://www.youtube.com/watch?v=${id}`,
             '-f',
             'best[ext=mp4]',
-            `--cookies=${cookiesPath}`
+            `--username radiogpt2@gmail.com --password Lisawow3`
         ]);
         readableStream.pipe(res);
     }catch(e){
