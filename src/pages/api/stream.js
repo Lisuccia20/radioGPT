@@ -8,9 +8,8 @@ export default async function handler(req, res) {
         const ytDlp = new YTDlpWrap('ytp-dlp-stream/binary');
         let readableStream = ytDlp.execStream([
             `https://www.youtube.com/watch?v=${id}`,
-            '-f',
-            'best[ext=mp4]',
-            `--username radiogpt2@gmail.com --password Lisawow3`
+            '-f --username radiogpt2@gmail.com --password Lisawow3',
+            'best[ext=mp4]'
         ]);
         readableStream.pipe(res);
     }catch(e){
