@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@codyduong/ytmusicapi": "^0.4.6",
-    "@distube/ytdl-core": "^4.15.9",
+    "@distube/ytdl-core": "^4.16.4",
     "@steepleinc/youtubei.js": "^13.0.0",
     "axios": "^1.8.3",
     "dotenv": "^16.4.7",
@@ -27,6 +27,7 @@
     "spotify-dl": "^1.1.2",
     "spottydl-better": "^0.3.121",
     "youtube-audio-stream": "^0.3.61",
+    "youtube-dl": "^3.5.0",
     "yt-dlp-wrap": "^2.3.12",
     "yt-stream": "^1.7.4",
     "ytdl-core": "^4.11.5",
