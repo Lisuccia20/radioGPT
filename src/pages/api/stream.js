@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
 
     try{
-        const stream = await ytstream.stream(`https://www.youtube.com/watch?v=${id}`, {
+        const stream = await ytstream.stream(`http://www.youtube.com/watch?v=${id}`, {
             quality: 'high',
             type: 'audio',
             highWaterMark: 1048576 * 32,
