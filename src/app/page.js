@@ -12,7 +12,6 @@ export default function Home() {
     const [duration, setDuration] = useState(0);
     const [playState, setPlayState] = useState(0)
     const [isFirstPlay, setIsFirstPlay] = useState(true);
-    const [startTime, setStartTime] = useState(0)
     const [canPlay, setCanPlay] = useState(false)
 
     // Ref to store the audio object
@@ -29,7 +28,6 @@ export default function Home() {
                 setCanPlay(false)
                 audioRef.current = new Audio();
                 gptRef.current = new Audio();
-                setPlayState(playState + 1);
                 const metadataSong = await axios.get(`/api/playlists?query=${playlist}`);
                 console.log(metadataSong.data.filename);
                 setFileName(metadataSong.data.filename);
@@ -46,9 +44,12 @@ export default function Home() {
 
 
     useEffect(() => {
+        console.log(`duration ${duration}`)
         if (duration === 0) return;
         const gptResponse = async () => {
+            const startTime = Date.now();
             try {
+                console.log('trying to get response')
                 const response = await openai.chat.completions.create({
                     model: "gpt-4o-mini-audio-preview",
                     modalities: ["text", "audio"],
@@ -65,8 +66,26 @@ export default function Home() {
                     ],
                     store: true,
                 });
-
+                console.log(response);
                 gptRef.current.src = `data:audio/mp3;base64,${response.choices[0].message.audio.data}`
+                if(gptRef.current) {
+                    gptRef.current.addEventListener('canplaythrough', () => {
+                        console.log(gptRef.current);
+                        const durationGpt = gptRef.current.duration;
+                        console.log('GPT Audio Duration:', durationGpt);
+                        const requestTime = Date.now() - startTime;
+                        console.log('requestTime:', requestTime);
+                        const delay = duration - durationGpt / 2;
+                        console.log('GPT Audio Delay:', delay);
+                        setTimeout(() => {
+                            fadeAudio(audioRef.current, 0.1, 1, gptRef.current);
+                            gptRef.current.addEventListener('ended', () => {
+                                fadeAudio(audioRef.current, 1, 1);
+                            });
+                        }, (delay * 1000) - requestTime);
+
+                    });
+                }
 
             } catch (error) {
                 console.log('Error generating GPT response:', error);
@@ -74,28 +93,7 @@ export default function Home() {
         }
 
         gptResponse()
-    }, [fileName, duration]);
-
-    useEffect(() => {
-        if(startTime === 0) return;
-        if(gptRef.current)  {
-            gptRef.current.addEventListener('loadedmetadata', () => {
-                const durationGpt = gptRef.current.duration;
-                console.log('GPT Audio Duration:', durationGpt);
-                const requestTime = Date.now() - startTime;
-                console.log('requestTime:', requestTime);
-                const delay = duration - durationGpt / 2;
-                console.log('GPT Audio Delay:', delay);
-                setTimeout(() => {
-                    fadeAudio(audioRef.current, 0.2, 1, gptRef.current);
-                    gptRef.current.addEventListener('ended', () => {
-                        fadeAudio(audioRef.current, 1, 1);
-                    });
-                }, (delay * 1000) - requestTime);
-
-            });
-        }
-    }, [startTime]);
+    }, [duration]);
 
     const Stream = async (id) => {
         console.log(`Start stream for ID: ${id}`);
@@ -115,7 +113,7 @@ export default function Home() {
             const loadTimeout = setTimeout(() => {
                 if (audioRef.current != null){
                     console.log('Audio took too long to load, retrying...');
-                    play();
+                    setCanPlay(true)
                 }
 
             }, 10000);
@@ -123,7 +121,6 @@ export default function Home() {
             audioRef.current.addEventListener('canplaythrough', () => {
                 audioRef.current.play();
                 clearTimeout(loadTimeout);
-                setStartTime(Date.now());
                 console.log('Audio can play through.');
             });
 
