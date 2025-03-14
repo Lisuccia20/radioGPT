@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="df1038e3-e03a-4c5c-8473-e78660f0b8ff" name="radioGPT">
+        <fileTransfer rootFolder="/root/radioGPT" accessType="SFTP" host="161.35.89.197" port="22" sshConfigId="646f90b6-72c0-4b49-b51a-9e1832bdfeca" sshConfig="root@161.35.89.197:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
