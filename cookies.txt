@@ -1,63 +1,268 @@
-# Netscape HTTP Cookie File
-# https://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file! Do not edit.
-
-.youtube.com	TRUE	/	TRUE	1773483333	__Secure-1PSIDTS	sidts-CjIB7pHptQTe_Po-riJDYJXLY6NdVA1xLipKHjN_WPJowEz7sMp--mFggYjzvk-ehtjPexAA
-.youtube.com	TRUE	/	TRUE	1773483333	__Secure-3PSIDTS	sidts-CjIB7pHptQTe_Po-riJDYJXLY6NdVA1xLipKHjN_WPJowEz7sMp--mFggYjzvk-ehtjPexAA
-.youtube.com	TRUE	/	FALSE	1776092243	HSID	ApNJJqgUxBmXOvQrU
-.youtube.com	TRUE	/	TRUE	1776092243	SSID	A0cW6Glts37Rd3Thq
-.youtube.com	TRUE	/	FALSE	1776092243	APISID	vo9EpKS_vr3soy1n/AHF7PqMLOiZsRTiXN
-.youtube.com	TRUE	/	TRUE	1776092243	SAPISID	-LDOuV65BaeguQ-T/ArN4v6MeK3-hqAmEX
-.youtube.com	TRUE	/	TRUE	1776092243	__Secure-1PAPISID	-LDOuV65BaeguQ-T/ArN4v6MeK3-hqAmEX
-.youtube.com	TRUE	/	TRUE	1776092243	__Secure-3PAPISID	-LDOuV65BaeguQ-T/ArN4v6MeK3-hqAmEX
-.youtube.com	TRUE	/	FALSE	1776092243	SID	g.a000uggWnDpaKhsvhUFbj3_k7PEd5O6ssJNvwdXpxHx7-Ph2Q-h4WuKErRAd8IBtPOuTy7ShyAACgYKAQUSARUSFQHGX2MijwbNRz3caCz58IKxmLWKgRoVAUF8yKqPd8NHj5kYTj2KLShA82jO0076
-.youtube.com	TRUE	/	TRUE	1776092243	__Secure-1PSID	g.a000uggWnDpaKhsvhUFbj3_k7PEd5O6ssJNvwdXpxHx7-Ph2Q-h4FQu4NiTPfAzMXeqDBXAvfQACgYKAdESARUSFQHGX2MiuE6sOeqLpaxT4_n1zYg8dRoVAUF8yKr0BMd07H4MOLfbgrTJEvwI0076
-.youtube.com	TRUE	/	TRUE	1776092243	__Secure-3PSID	g.a000uggWnDpaKhsvhUFbj3_k7PEd5O6ssJNvwdXpxHx7-Ph2Q-h4a43OQCVp7MJkmY4DO7BLgQACgYKAYsSARUSFQHGX2MiEbCk9b7afO2GXP2EwidXuRoVAUF8yKo95jt5s7U9pYxd-nXTNfSS0076
-.youtube.com	TRUE	/	TRUE	1776506129	PREF	f6=40000080&tz=Europe.Rome&f5=30000&f7=100&repeat=NONE
-.youtube.com	TRUE	/	TRUE	1757495435	__Secure-ROLLOUT_TOKEN	CJG0nZLZgZrrThDgsf-Epv2LAxjThNT9nImMAw%3D%3D
-.youtube.com	TRUE	/	TRUE	1776093551	LOGIN_INFO	AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI:QUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	TRUE	1775661550	__Secure-YEC	CgstbVI4dks4ZUhlMCiM-s--BjIiCgJJVBIcEhgSFhMLFBUWFwwYGRobHB0eHw4PIBAREiEgSg%3D%3D
-.youtube.com	TRUE	/	TRUE	1776074125	VISITOR_PRIVACY_METADATA	CgJJVBIcEhgSFhMLFBUWFwwYGRobHB0eHw4PIBAREiEgSg%3D%3D
-.youtube.com	TRUE	/	FALSE	1773483846	SIDCC	AKEyXzUxgLjrU_HSoZZ7gK5aeCgF7gci5sNey7MTQO7YyxX6Xn5ktBS4YpljWvW8ZuCIE_Bjf90
-.youtube.com	TRUE	/	TRUE	1773483846	__Secure-1PSIDCC	AKEyXzW-eYF1IY7LGYWlBG2Kl9BFY5cQIeORJDnKsklzGrQnum7V-7-eezeL00Hem41WNDhiyyg
-.youtube.com	TRUE	/	TRUE	1773483846	__Secure-3PSIDCC	AKEyXzW6ycV81zdBgpGoLGGtF04_rjVnVUv8Dp7cRrxK4pMBVnoaAfdxcXrHFQLo7zOn_Ar5lPs
-.youtube.com	TRUE	/	FALSE	1741533557	ST-jti28z	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741607285	ST-4hrrjg	itct=CLMDENwwIhMIno732Lj_iwMVAt9CBR3ovhkJMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngE%3D&csn=i1ETg1Te1_U8duzx&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CLMDENwwIhMIno732Lj_iwMVAt9CBR3ovhkJMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngE%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DEeW9lBrNnqI%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22EeW9lBrNnqI%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr5---sn-8vq54voxpu-hm2k.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3D11e5bd941acd9ea2%26ip%3D37.159.138.2%26initcwndbps%3D1887500%26mt%3D1741606865%26oweuc%3D%22%7D%7D%7D%2C%22startTimeSeconds%22%3A0%7D%7D
-.youtube.com	TRUE	/	FALSE	1741607728	ST-1e47rjo	itct=CLIDENwwIhMI2aqCrLr_iwMVcYT0Bx2gdRDGMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngE%3D&csn=7f6BwMtwzjjM8YnR&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CLIDENwwIhMI2aqCrLr_iwMVcYT0Bx2gdRDGMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngE%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DpzCLQK3YNDc%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22pzCLQK3YNDc%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr5---sn-8vq54voxpu-hm2r.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3Da7308b40add83437%26ip%3D37.159.138.2%26initcwndbps%3D1510000%26mt%3D1741607338%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741684014	ST-1v0nta2	itct=CLADENwwIhMI_bD-vdaBjAMV4zLxBR1-TDrBMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngE%3D&csn=Xcb_DXikaWlsZmEN&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CLADENwwIhMI_bD-vdaBjAMV4zLxBR1-TDrBMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngE%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DYBXcgLJ-k8I%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22YBXcgLJ-k8I%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr2---sn-uxaxpu5ap5-apoe.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3D6015dc80b27e93c2%26ip%3D82.50.7.139%26initcwndbps%3D2238750%26mt%3D1741683665%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741686295	ST-1g2buqi	gs_l=youtube.3..0i512k1j0i22i30k1l7.2289163.2295234.0.2295382......2.453.4227.0j14j4j3j1..........1.......15..35i39i362k1j35i39k1j0i433i131i471k1j0i433i229k1j0i512i433i131k1j0i512i433k1j0i433i131i389k1j0i471k1j0i433i471k1j0i512i433i131i650k1j0i512i203k1.642&oq=steam%20deck%20fallen%20order&itct=CBQQ7VAiEwj9sP691oGMAxXjMvEFHX5MOsE%3D&csn=R8Wn3IvsH5Ykf1C_&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CBQQ7VAiEwj9sP691oGMAxXjMvEFHX5MOsE%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fresults%3Fsearch_query%3Dsteam%2Bdeck%2Bfallen%2Border%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_SEARCH%22%2C%22rootVe%22%3A4724%7D%7D%2C%22searchEndpoint%22%3A%7B%22query%22%3A%22steam%20deck%20fallen%20order%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1749501645	_gcl_au	1.1.1258703584.1741725645
-.youtube.com	TRUE	/	FALSE	1741760946	ST-1j9lgi1	csn=n4p_qCcYtPduOlY0&itct=CIMEEKCzAhgAIhMI59yY3PSDjAMV5t9CBR01vQJ_
-.youtube.com	TRUE	/	FALSE	1741764174	ST-bap26s	gs_l=youtube.3...77877952.77878081.1.77878554......0.443.662.2-1j0j1..........1j2.........35i39i362k1j35i39k1j0i433i131i471k1j0i433i229k1j0i512i433i131k1j0i512i433k1j0i433i131i389k1j0i471k1j0i433i471k1j0i512i433i131i650k1j0i512i203k1j0i512k1j0i22i30k1.642&oq=%2Fwatch%3Fv%3DrkuBikIXpJ0%26list%3DPLmqfUTL0xO1aPxerBuBNgQdwFSlKakqgu%26pp%3DiAQB8AUB&itct=CBYQ7VAiEwilq9WH34GMAxWrBXMJHbcpNVQ%3D&csn=52g68zjRcu7zCbT9&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CBYQ7VAiEwilq9WH34GMAxWrBXMJHbcpNVQ%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fresults%3Fsearch_query%3D%252Fwatch%253Fv%253DrkuBikIXpJ0%2526list%253DPLmqfUTL0xO1aPxerBuBNgQdwFSlKakqgu%2526pp%253DiAQB8AUB%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_SEARCH%22%2C%22rootVe%22%3A4724%7D%7D%2C%22searchEndpoint%22%3A%7B%22query%22%3A%22%2Fwatch%3Fv%3DrkuBikIXpJ0%26list%3DPLmqfUTL0xO1aPxerBuBNgQdwFSlKakqgu%26pp%3DiAQB8AUB%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1741764179	ST-15vvtkq	itct=CMEFENwwGAAiEwicz6KF34GMAxVg-UIFHdinBZoyBnNlYXJjaFIXc3RlYW0gZGVjayBmYWxsZW4gb3JkZXKaAQMQ9CQ%3D&csn=vMAGN5ywGsdx87di&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CMEFENwwGAAiEwicz6KF34GMAxVg-UIFHdinBZoyBnNlYXJjaFIXc3RlYW0gZGVjayBmYWxsZW4gb3JkZXKaAQMQ9CQ%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DRlhPpnPZusw%26pp%3DygUXc3RlYW0gZGVjayBmYWxsZW4gb3JkZXI%253D%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22RlhPpnPZusw%22%2C%22params%22%3A%22qgMXc3RlYW0gZGVjayBmYWxsZW4gb3JkZXK6AwoIkrv28K_Kzf9TugMKCKOE2_mruumwFboDCwjtpP7k3uep5LkBugMLCIzXs_OKx52d3gG6AwsImqKI5oSA_fjDAboDCwjXrsu-38_Q6dsBugMKCMHd86vujrSHcroDCwiC0JXY-qeM5pYBugMLCKrXs4f0p9zxiQG6AwsI2YHLq6Tts_TBAboDCgjenoHW09zokGG6AwsIreCk-tPHnqvYAboDCgi38efvwJCvnl-6AwoI1-LB-MP49sIpugMKCLGHgrTsqO_AVboDCwjh_sCtnfWuvIkBugMKCMSIqruXrJ_4B7oDCwiPrrfJ_6DG2LUBugMKCJyx2rCRnLffTw%253D%253D%22%2C%22playerParams%22%3A%22ygUXc3RlYW0gZGVjayBmYWxsZW4gb3JkZXI%253D%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr3---sn-uxaxpu5ap5-apoe.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3D46584fa673d9bacc%26ip%3D82.50.7.139%26initcwndbps%3D2455000%26mt%3D1741685582%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741764736	ST-6u0feb	gs_l=youtube.3..33i160i10k1l2.557210.562694.2.562868......0.185.2337.10j12..........1.......15..35i39i362k1j35i39k1j0i433i131i471k1j0i433i229k1j0i512i433i131k1j0i512i433k1j0i433i131i389k1j0i471k1j0i433i471k1j0i512i433i131i650k1j0i512i203k1j0i512k1j0i22i30k1j0i3k1j0i512i433i67i650k1j0i512i10k1j0i512i433i131i10k1j0i512i13k1j0i13i30k1j0i512i19i13k1j0i22i10i30k1.642&oq=ytmusic%20api%20javascript&itct=CBYQ7VAiEwjm0KGXgYSMAxWNcnoFHUcjD5A%3D&csn=I4YcCGlVa2lg7YqP&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CBYQ7VAiEwjm0KGXgYSMAxWNcnoFHUcjD5A%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fresults%3Fsearch_query%3Dytmusic%2Bapi%2Bjavascript%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_SEARCH%22%2C%22rootVe%22%3A4724%7D%7D%2C%22searchEndpoint%22%3A%7B%22query%22%3A%22ytmusic%20api%20javascript%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1741764743	ST-1ish8iv	itct=CJUHENwwGAIiEwjc_Yuhg4SMAxWqWnoFHUHmDEsyBnNlYXJjaFIWeXRtdXNpYyBhcGkgamF2YXNjcmlwdJoBAxD0JA%3D%3D&csn=4qm8vMzt2rQRXcxu&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CJUHENwwGAIiEwjc_Yuhg4SMAxWqWnoFHUHmDEsyBnNlYXJjaFIWeXRtdXNpYyBhcGkgamF2YXNjcmlwdJoBAxD0JA%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3D0dmS0He_czs%26pp%3DygUWeXRtdXNpYyBhcGkgamF2YXNjcmlwdA%253D%253D%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%220dmS0He_czs%22%2C%22params%22%3A%22qgMWeXRtdXNpYyBhcGkgamF2YXNjcmlwdLoDCwiyw5bsx4yI5IoBugMKCLLv87aTqobYLLoDCwjdqZyKy_nLw8EBugMKCNiHp-mc7O3oK7oDCgiemeD49cmNnge6AwoI5Nivk8OP2cpPugMKCNn924_yssejULoDCgjI_ZrV_7yJtWe6AwoIzYjLgeDX2-5MugMLCJLBqKWz45ORpQG6AwsI2sWF2Pv-tofAAboDCgjKzb63u8SYwkO6AwoIg5DbuqrtzNc5ugMLCMjEjbbe442BkAG6AwoIl9WW8dGWncNsugMLCOq30Zqcj-Hi9gG6AwsIw_-Y__Ck-JzQAboDCgjBqY71stzXtUG6AwsIlb2Ttd3xqq3mAQ%253D%253D%22%2C%22playerParams%22%3A%22ygUWeXRtdXNpYyBhcGkgamF2YXNjcmlwdA%253D%253D%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr3---sn-45nufxc-hm2l.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3Dd1d992d077bf733b%26ip%3D93.56.130.41%26initcwndbps%3D2671250%26mt%3D1741764310%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741764935	ST-1idnegj	itct=CIwFENwwGAsiEwjc_Yuhg4SMAxWqWnoFHUHmDEsyBnNlYXJjaFIWeXRtdXNpYyBhcGkgamF2YXNjcmlwdJoBAxD0JA%3D%3D&csn=nu3Hbz3-AiOnEOBV&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CIwFENwwGAsiEwjc_Yuhg4SMAxWqWnoFHUHmDEsyBnNlYXJjaFIWeXRtdXNpYyBhcGkgamF2YXNjcmlwdJoBAxD0JA%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DTN1uvgAyxE0%26pp%3DygUWeXRtdXNpYyBhcGkgamF2YXNjcmlwdA%253D%253D%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22TN1uvgAyxE0%22%2C%22params%22%3A%22qgMWeXRtdXNpYyBhcGkgamF2YXNjcmlwdLoDCwiyw5bsx4yI5IoBugMLCLvm_b2H2uTs0QG6AwoIsu_ztpOqhtgsugMLCN2pnIrL-cvDwQG6AwoI2Ien6Zzs7egrugMKCJ6Z4Pj1yY2eB7oDCgjk2K-Tw4_Zyk-6AwoI2f3bj_Kyx6NQugMKCMj9mtX_vIm1Z7oDCwiSwails-OTkaUBugMLCNrFhdj7_raHwAG6AwoIys2-t7vEmMJDugMKCIOQ27qq7czXOboDCwjIxI223uONgZABugMKCJfVlvHRlp3DbLoDCwjqt9GanI_h4vYBugMLCMP_mP_wpPic0AG6AwoIwamO9bLc17VBugMLCJW9k7Xd8aqt5gE%253D%22%2C%22playerParams%22%3A%22ygUWeXRtdXNpYyBhcGkgamF2YXNjcmlwdA%253D%253D%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr2---sn-45nufxc-hm2z.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3D4cdd6ebe0032c44d%26ip%3D93.56.130.41%26initcwndbps%3D1917500%26mt%3D1741764310%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741767855	ST-1ssq36q	csn=tuNOaFQNjjWNyrNx&itct=CL8CENafBxgAIhMIsofr7o6EjAMVHONCBR2mEzHV
-.youtube.com	TRUE	/	FALSE	1741770408	ST-1oqx9h7	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741770413	ST-1b	disableCache=false&itct=CIEFEPCoBxgAIhMI8ZOix5GEjAMVO-lCBR12JQVh&csn=v8yXLt_xB2SCmbld&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CIEFEPCoBxgAIhMI8ZOix5GEjAMVO-lCBR12JQVh%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2F%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_BROWSE%22%2C%22rootVe%22%3A3854%2C%22apiUrl%22%3A%22%2Fyoutubei%2Fv1%2Fbrowse%22%7D%7D%2C%22browseEndpoint%22%3A%7B%22browseId%22%3A%22FEwhat_to_watch%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1741770424	ST-i8nya	gs_l=youtube.3..35i39k1l3j0i512i433i131k1j0i512k1j0i512i433i131k1j0i512k1j0i512i433i131k1j0i512k1l6.1848470.1849404.0.1849718......0.110.496.3j2..........1.......15..35i39i362k1j0i229k1j0i433i131i471k1j0i433i471k1j0i512i433k1j0i433i131i389k1j0i512i433i131i650k1.199&oq=naska&itct=CBQQ7VAiEwiU0ZO0mISMAxUMPfEFHfUGMUI%3D&csn=W69-9g3ttBwlIzBz&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CBQQ7VAiEwiU0ZO0mISMAxUMPfEFHfUGMUI%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fresults%3Fsearch_query%3Dnaska%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_SEARCH%22%2C%22rootVe%22%3A4724%7D%7D%2C%22searchEndpoint%22%3A%7B%22query%22%3A%22naska%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1741770457	ST-efsvxb	disableCache=false&itct=CPoEELUsGAYiEwjxk6LHkYSMAxU76UIFHXYlBWE%3D&csn=_q-Rjdy7CJilZisM&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CPoEELUsGAYiEwjxk6LHkYSMAxU76UIFHXYlBWE%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Ffeed%2Fplaylists%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_BROWSE%22%2C%22rootVe%22%3A6827%2C%22apiUrl%22%3A%22%2Fyoutubei%2Fv1%2Fbrowse%22%7D%7D%2C%22browseEndpoint%22%3A%7B%22browseId%22%3A%22FEplaylist_aggregation%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1741770463	ST-1b1x0vo	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741771991	ST-yve142	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741771993	ST-x6o0hb	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741784666	ST-yvyvhu	csn=FeR83_M9gYA5WKlP&itct=CI0BEKCzAhgAIhMIoPaSu82EjAMV_ONCBR1P_hHZ
-.youtube.com	TRUE	/	FALSE	1741791364	ST-1dmyh6k	csn=ki3GfEzt-Tj5bRJp&itct=CP4EEKCzAhgCIhMI-KzWuOaEjAMVeyAGAB36ORem
-.youtube.com	TRUE	/	FALSE	1741791375	ST-1pdlvwy	csn=qGNLxUHALumqadj9&itct=CPAEEKCzAhgDIhMI-KzWuOaEjAMVeyAGAB36ORem
-.youtube.com	TRUE	/	FALSE	1741791391	ST-qywl2m	csn=yFgSJXLhfU8ZHjUP&itct=CGUQoLMCGAIiEwj4rNa45oSMAxV7IAYAHfo5F6Y%3D
-.youtube.com	TRUE	/	FALSE	1741795647	ST-1sk8826	csn=D9msKRUEpaKIPxa7&itct=CIcBENafBxgBIhMI6cKCsvaEjAMVtcFCBR1BER-2
-.youtube.com	TRUE	/	FALSE	1741805797	ST-ucqbbh	csn=BBA_xFGfXbMUqMEN&itct=CAcQpzsYAiITCL-0-JKchYwDFfHjQgUdYZURHQ%3D%3D
-.youtube.com	TRUE	/	FALSE	1741853706	ST-s7a51b	csn=qeKQN9rtTsqwVR-q&itct=CDwQ1p8HGAAiEwiu2ZnWzoaMAxXd5kIFHaELJ1E%3D
-.youtube.com	TRUE	/	FALSE	1741853740	ST-crf9qf	csn=5JGA0Qlag6dQKCPL&itct=CJcBENafBxgAIhMI0KTp5s6GjAMVJ9FCBR2ldB8c
-.youtube.com	TRUE	/	TRUE	0	YSC	KOeysbnhF90
-.youtube.com	TRUE	/	FALSE	1741943935	ST-hcbf8d	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	TRUE	1741944530	CONSISTENCY	AKreu9vQsdeN483EP43Hvydd4k4_JRrZcmJ56UGxKqjZXGCdOrlVOT6idXCsjRlzGzVcX0yacRa8QsIfxU0HqH0mqtqVpksihVlRDsvk0YQRoj7OOnR6CjWq-wDr-RIxEF6tDQ-0bvLEcSgiXJ4NnXlo
-.youtube.com	TRUE	/	FALSE	1741943945	ST-1s61ps8	gs_l=youtube.3..35i39k1j0i229k1j0i512i433k1l2j0i512i433i67i650k1j0i512i433k1l3j0i512i433i131k1l2j0i512i433k1l3j0i512k1.10999.11381.0.11564......0.190.523.0j3..........1.......15..35i39i362k1j0i433i229k1j0i433i471k1j0i433i389k1j0i433i131i471k1.395&oq=ciao&itct=CBQQ7VAiEwiM0OHnnomMAxW3wUIFHcihOMc%3D&csn=Mwvw7dDfJ5-jSgef&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CBQQ7VAiEwiM0OHnnomMAxW3wUIFHcihOMc%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fresults%3Fsearch_query%3Dciao%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_SEARCH%22%2C%22rootVe%22%3A4724%7D%7D%2C%22searchEndpoint%22%3A%7B%22query%22%3A%22ciao%22%7D%7D
-.youtube.com	TRUE	/	FALSE	1741943945	ST-1k06sw0	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741943948	ST-o85wwm	itct=CKcDENwwGAAiEwiIs87unomMAxUZ-UIFHXOZMqMyBnNlYXJjaFIEY2lhb5oBAxD0JA%3D%3D&csn=ixR7Cxz7s8gOqKZD&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CKcDENwwGAAiEwiIs87unomMAxUZ-UIFHXOZMqMyBnNlYXJjaFIEY2lhb5oBAxD0JA%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DQgM1Z6gg8u0%26pp%3DygUEY2lhbw%253D%253D%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22QgM1Z6gg8u0%22%2C%22params%22%3A%22qgMEY2lhb7oDCwj7l7-TnYztsdABugMKCPjS0YyauZLBILoDCgjHrdfghvzqi3e6AwsIuZT6tP3KpJ3KAboDCgjozqe5ndeqmFi6AwoI1q3G9OT5qtUbugMKCM3RpbC3lc_QZroDCwjAzOON1oKn39EBugMKCI6Glef88aS6M7oDCwjjyf3X256bkIsBugMKCOG2h_-D4uCNeLoDCwjE4deto6rq7PUBugMKCJbih-eDl833HroDCwiP8PfJs-LMl_MBugMLCKzl9vz6xpmwjAG6AwsIx6zcnKr2scmNAboDCgj3oZ_MrLOUjEK6AwsI3-3vh4r16LjbAboDCgiO9Pyo2qbdo3TyAwUNMTfsPg%253D%253D%22%2C%22playerParams%22%3A%22ygUEY2lhbw%253D%253D%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr8---sn-45nufxc-hm2e.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3D42033567a820f2ed%26ip%3D93.56.130.41%26initcwndbps%3D3077500%26mt%3D1741943575%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741943966	ST-toz89j	itct=CLUCENwwGAIiEwiIs87unomMAxUZ-UIFHXOZMqMyBnNlYXJjaFIEY2lhb5oBAxD0JA%3D%3D&csn=4O1z9TyVpEhZbynN&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22CLUCENwwGAIiEwiIs87unomMAxUZ-UIFHXOZMqMyBnNlYXJjaFIEY2lhb5oBAxD0JA%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3D0GO0YdJvy_s%26pp%3DygUEY2lhbw%253D%253D%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%220GO0YdJvy_s%22%2C%22params%22%3A%22qgMEY2lhb7oDCgjt5YPB-qzNgUK6AwoI-NLRjJq5ksEgugMKCMet1-CG_OqLd7oDCwi5lPq0_cqkncoBugMKCOjOp7md16qYWLoDCgjWrcb05Pmq1Ru6AwoIzdGlsLeVz9BmugMLCMDM443Wgqff0QG6AwoIjoaV5_zxpLozugMLCOPJ_dfbnpuQiwG6AwoI4baH_4Pi4I14ugMLCMTh162jqurs9QG6AwoIluKH54OXzfceugMLCI_w98mz4syX8wG6AwsIrOX2_PrGmbCMAboDCwjHrNycqvaxyY0BugMKCPehn8yss5SMQroDCwjf7e-HivXouNsBugMKCI70_Kjapt2jdPIDBQ0xN-w-%22%2C%22playerParams%22%3A%22ygUEY2lhbw%253D%253D%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr1---sn-45nufxc-hm2z.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3Dd063b461d26fcbfb%26ip%3D93.56.130.41%26initcwndbps%3D2451250%26mt%3D1741943575%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741943972	ST-3opvp5	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741943975	ST-1dqo3ev	itct=COQBENwwGAoiEwiIs87unomMAxUZ-UIFHXOZMqMyBnNlYXJjaFIEY2lhb5oBAxD0JA%3D%3D&csn=LMdFVGppESCIfAFh&session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB&endpoint=%7B%22clickTrackingParams%22%3A%22COQBENwwGAoiEwiIs87unomMAxUZ-UIFHXOZMqMyBnNlYXJjaFIEY2lhb5oBAxD0JA%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3D0b6cFWG45kA%26pp%3DygUEY2lhbw%253D%253D%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%220b6cFWG45kA%22%2C%22params%22%3A%22qgMEY2lhb7oDCgjt5YPB-qzNgUK6AwsI-5e_k52M7bHQAboDCgj40tGMmrmSwSC6AwoIx63X4Ib86ot3ugMLCLmU-rT9yqSdygG6AwoI6M6nuZ3XqphYugMKCNatxvTk-arVG7oDCgjN0aWwt5XP0Ga6AwoIjoaV5_zxpLozugMLCOPJ_dfbnpuQiwG6AwoI4baH_4Pi4I14ugMLCMTh162jqurs9QG6AwoIluKH54OXzfceugMLCI_w98mz4syX8wG6AwsIrOX2_PrGmbCMAboDCwjHrNycqvaxyY0BugMKCPehn8yss5SMQroDCwjf7e-HivXouNsBugMKCI70_Kjapt2jdPIDBQ0xN-w-%22%2C%22playerParams%22%3A%22ygUEY2lhbw%253D%253D%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr2---sn-45nufxc-hm2s.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26siu%3D1%26msp%3D1%26odepv%3D1%26id%3Dd1be9c1561b8e640%26ip%3D93.56.130.41%26initcwndbps%3D2138750%26mt%3D1741943575%26oweuc%3D%22%7D%7D%7D%7D%7D
-.youtube.com	TRUE	/	FALSE	1741943976	ST-amrb2j	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741946133	ST-tladcw	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
-.youtube.com	TRUE	/	FALSE	1741946134	ST-xuwub9	session_logininfo=AFmmF2swRgIhAPPbygNPjOFC2nU7MflA3s7KI5WB_lr9FzmiLHCT8a41AiEAmAQ9W_WcH9_ShDWB_8JDkQ-zT7CTEs0JxT5ZnoDUCbI%3AQUQ3MjNmd3Z6RDN4YzNBSzJYeHdSUTAyd3Y0V2xhcENyWFhlZkhWVERSVWdEd1VBcnJaOFBSdGpIaVI2MHQ5OGVfMm5QUUg1OUJ5ZGFvSGRBMDFjSEJkSzB1RGg0R041RmhndC1ieEt2VVlXdEtTUUxwTW1hRXBlZU4yU3FiOU5oRjBkaTdabmc5c3JaZDM5WmhGTDB4TjVWSXl4bU9DelJB
+[
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.62314,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "__Secure-1PAPISID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "xqsJbs3NvSo9clV3/AWgue0uBfSEM6gJ35",
+    "id": 1
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.624327,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-1PSID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "g.a000uwgWnOImE2LYdsFBViIuBLtX9fxfvb-KrNKztB-7M9cdjeRVHDl_aV_88heSC9HSo0bB1wACgYKAfgSAQASFQHGX2Mimf9oFGzOcVCJ_Qu2YIwKxhoVAUF8yKrM1sgxitjBNCaEPf5fCRR00076",
+    "id": 2
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1773486242.431825,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-1PSIDCC",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "AKEyXzVErtwQY6DK0Xio6KjvBy4FTQZXuxrv7tSDpO1_Rl4cEvV5QalNE1MRz_oES9yXalAMrg",
+    "id": 3
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1773486030.296412,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-1PSIDTS",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "sidts-CjEBEJ3XV11tNoqB4k1j2ybaC10jaixlnG8r2mUkrIsMQA-nZI5trkjb4b3HfAg-x4InEAA",
+    "id": 4
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.623313,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "__Secure-3PAPISID",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "xqsJbs3NvSo9clV3/AWgue0uBfSEM6gJ35",
+    "id": 5
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.624518,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-3PSID",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "g.a000uwgWnOImE2LYdsFBViIuBLtX9fxfvb-KrNKztB-7M9cdjeRVFoSG6K4Gl5F6FXc97pUGUgACgYKAUASAQASFQHGX2MiXhEcpGYLb9Y1d4LBYyty-BoVAUF8yKqY8I3NZkuPiOSLsOCng4x70076",
+    "id": 6
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1773486242.431883,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-3PSIDCC",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "AKEyXzXFvi0YTwl1xbpYk2UdGtzKB6Sa9PNzIYY2YQ9vaBUMHkL33QSfLs06O42vl824V659t8g",
+    "id": 7
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1773486030.296645,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-3PSIDTS",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "sidts-CjEBEJ3XV11tNoqB4k1j2ybaC10jaixlnG8r2mUkrIsMQA-nZI5trkjb4b3HfAg-x4InEAA",
+    "id": 8
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776016329.259243,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__Secure-YEC",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "CgtOUERtYnZtSWZGVSjSmNC-BjIiCgJJVBIcEhgSFhMLFBUWFwwYGRobHB0eHw4PIBAREiEgEg%3D%3D",
+    "id": 9
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1749711015,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "_gcl_au",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "1.1.1034082069.1741935016",
+    "id": 10
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.622843,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "APISID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "uwJY9GqbeVq4Jc_E/APk_ylnPx2_T-jxL4",
+    "id": 11
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1741950604,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "CONSISTENCY",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "AKreu9tKATgmIrrXiDxfY5dgBNSZ1CbcxJmPuFPfgDZg5IN_4b3CxNVlK-rjgQXjsm-syaeEvS8MKJZGCXjWC8sr2fMGhC5iexB1wMdqOZSlRyaS6rX_oEpNOsJnzT7ZjjuKdp0KcFTpcUhIV2Td0maC",
+    "id": 12
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.622495,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "HSID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "AOJal9uAoEy-Yha7h",
+    "id": 13
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.623479,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "LOGIN_INFO",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "AFmmF2swRQIhAOGfUjIVqkZO_WbushB8M1GwZEh686fD2eTaXzhLAaZDAiAwm8JxD2kWCeECFTlou0YQY6iaOHMzNj6O8gTCPnKmow:QUQ3MjNmeHkxMzBnSmdPZGZXRXNnOEhSRWFTM2Q2M3ZXR1RaYllOZm0xSUcwOHVId1kyejg4OFRxZ3BfQ3RYaU4tQUhQSmpMSmVNd3QwTWxkdkZwU1BjN2gzblNEN295Uzl4MUZUZFZpVjZCME9JWk1EdFIzYm1PNEpwYlRVRDUtcDRnYVZwc1RKWW9ySjh0SXhtNXpCMEY2d3VKbFBETkFB",
+    "id": 14
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510031.512679,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "PREF",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "f7=100&tz=Europe.Rome&repeat=NONE&f5=30000",
+    "id": 15
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.622992,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "SAPISID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "xqsJbs3NvSo9clV3/AWgue0uBfSEM6gJ35",
+    "id": 16
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.624153,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "SID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "g.a000uwgWnOImE2LYdsFBViIuBLtX9fxfvb-KrNKztB-7M9cdjeRVPlGJx7xGF0RL6StIFnbTDQACgYKASkSAQASFQHGX2MilPudFlpbxI_zWXV7Qk3nTBoVAUF8yKpabY6AUMQAzbDCDtBoGZ-X0076",
+    "id": 17
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1773486242.431695,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "SIDCC",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "AKEyXzWkSs3c9ei1kSaL6ETxyEyLdZzbtkdnkMPAoR-KZX999l5L5eTy7h2B5eMMZn4HkpUO5mY",
+    "id": 18
+},
+{
+    "domain": ".youtube.com",
+    "expirationDate": 1776510030.622692,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "SSID",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "AWUuB5KIlblQabv32",
+    "id": 19
+}
+]
