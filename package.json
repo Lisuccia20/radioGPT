@@ -14,6 +14,7 @@
     "@steepleinc/youtubei.js": "^13.0.0",
     "axios": "^1.8.3",
     "dotenv": "^16.4.7",
+    "https-proxy-agent": "^7.0.6",
     "libmuse": "^0.1.1",
     "music-metadata": "^11.0.2",
     "next": "15.2.2",
