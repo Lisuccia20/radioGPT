@@ -108,21 +108,9 @@ export default function Home() {
                 audioRef.current.volume = 0.2; // Lower volume for subsequent playbacks
             }
 
+            audioRef.current.play();
 
 
-            const loadTimeout = setTimeout(() => {
-                if (audioRef.current != null){
-                    console.log('Audio took too long to load, retrying...');
-                    setCanPlay(true)
-                }
-
-            }, 20000);
-
-            audioRef.current.addEventListener('canplaythrough', () => {
-                audioRef.current.play();
-                clearTimeout(loadTimeout);
-                console.log('Audio can play through.');
-            });
 
             audioRef.current.addEventListener('ended', () => {
                 setCanPlay(true)
