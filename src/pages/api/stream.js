@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     ytstream.setApiKey(apiKey);
     ytstream.setPreference('api', 'ANDROID');
     try{
-        const stream = await ytstream.stream(`https://www.youtube.com/watch?v=dQw4w9WgXcQ`, {
+        const stream = await ytstream.stream(`https://www.youtube.com/watch?v=${id}`, {
             quality: 'high',
             type: 'audio',
             highWaterMark: 1048576 * 32,
