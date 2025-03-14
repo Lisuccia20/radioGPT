@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         keepAliveMsecs: 5e3
     });
 
-    agent.syncFile('./cookie.json')
+    agent.syncFile('./cookies.json')
 
     ytstream.setGlobalAgent(agent);
 
