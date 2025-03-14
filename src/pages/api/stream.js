@@ -5,25 +5,10 @@ export default async function handler(req, res) {
     const { id } = req.query;
     const proxy = 'http://13.38.153.36';
 
-    const agent = new HttpsProxyAgent(proxy);
-
-    const options = {
-        filter: 'audioonly',
-        quality: 'highestaudio',
-        dl_priority: 1,
-        highWaterMark: 1 << 25, // 32MB
-        // You can add custom headers to simulate a legitimate user (optional)
-        requestOptions: {
-            agent: agent,
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-        }
-    };
+    const agent = ytdl.createProxyAgent(proxy);
 
     try {
-        const agent = ytdl.createAgent(JSON.parse(fs.readFileSync("cookies.json")));
-        ytdl(`https://www.youtube.com/watch?v=${id}`, {options}).pipe(res);
+        ytdl(`https://www.youtube.com/watch?v=${id}`, { agent }).pipe(res);
 
     } catch (e) {
         console.error("Error streaming the video:", e);
