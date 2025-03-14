@@ -4,23 +4,20 @@ export default async function handler(req, res) {
     const { id } = req.query;
     const apiKey = process.env.NEXT_PUBLIC_YT_API_KEY;
     ytstream.setApiKey(apiKey);
-    ytstream.setPreference('api');
+    ytstream.setPreference('api', 'IOS');
 
     const agent = new ytstream.YTStreamAgent([], {
-        localAddress: '127.0.0.53',
         keepAlive: true,
         keepAliveMsecs: 5000
     });
 
-    agent.syncFile('./cookies.json');  // Ensure cookies.json exists and is valid
+    agent.syncFile('./cookies.json');
     ytstream.setGlobalAgent(agent);
 
     try {
-        const stream = await ytstream.stream(`https://www.youtube.com/watch?v=${id}`, {
+        const stream = await ytstream.stream(`https://youtu.be/watch?v=${id}`, {
             quality: 'high',
-            type: 'audio',  // Ensure 'audio' type is supported for your needs
-            highWaterMark: 1048576 * 32,
-            download: true
+            type: 'audio+video',
         });
 
         // Set the correct headers for audio streaming
