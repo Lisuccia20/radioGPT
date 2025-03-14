@@ -34,6 +34,7 @@ export default function Home() {
                 let id = metadataSong.data.id;
                 setDuration(metadataSong.data.duration);
                 await Stream(id);
+
             } catch (error) {
                 console.log('Error fetching song data:', error);
             }
