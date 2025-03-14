@@ -25,7 +25,9 @@
     "s-ytdl": "^1.1.4",
     "spotify-dl": "^1.1.2",
     "spottydl-better": "^0.3.121",
-    "ytdl-core": "npm:@distube/ytdl-core@^4.16.4",
+    "youtube-audio-stream": "^0.3.61",
+    "yt-dlp-wrap": "^2.3.12",
+    "ytdl-core": "^4.11.5",
     "ytmusic": "^0.0.9",
     "ytmusic_api_unofficial": "^2.0.22",
     "ytmusic-api": "^5.3.0"

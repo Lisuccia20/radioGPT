@@ -13,28 +13,37 @@ export default function Home() {
     const [playState, setPlayState] = useState(0)
     const [isFirstPlay, setIsFirstPlay] = useState(true);
     const [startTime, setStartTime] = useState(0)
+    const [canPlay, setCanPlay] = useState(false)
 
     // Ref to store the audio object
     const audioRef = useRef(null);
     const gptRef = useRef(null);
 
 
+    useEffect(() => {
+        const play = async () => {
+            if (!canPlay) {
+                return;
+            }
+            try {
+                setCanPlay(false)
+                audioRef.current = new Audio();
+                gptRef.current = new Audio();
+                setPlayState(playState + 1);
+                const metadataSong = await axios.get(`/api/playlists?query=${playlist}`);
+                console.log(metadataSong.data.filename);
+                setFileName(metadataSong.data.filename);
+                let id = metadataSong.data.id;
+                setDuration(metadataSong.data.duration);
+                await Stream(id);
+            } catch (error) {
+                console.log('Error fetching song data:', error);
+            }
+        };
 
-    const play = async () => {
-        try {
-            audioRef.current = new Audio();
-            gptRef.current = new Audio();
-            setPlayState(playState + 1);
-            const metadataSong = await axios.get(`/api/playlists?query=${playlist}`);
-            console.log(metadataSong.data.filename);
-            setFileName(metadataSong.data.filename);
-            let id = metadataSong.data.id;
-            setDuration(metadataSong.data.duration);
-            await Stream(id);
-        } catch (error) {
-            console.log('Error fetching song data:', error);
-        }
-    };
+        play()
+    }, [canPlay]);
+
 
     useEffect(() => {
         if (duration === 0) return;
@@ -92,11 +101,6 @@ export default function Home() {
         console.log(`Start stream for ID: ${id}`);
         try {
 
-            if (audioRef.current) {
-                audioRef.current.pause(); // Ensure any previous audio is stopped
-                audioRef.current.src = ''; // Reset the source
-            }
-
             audioRef.current.src = `/api/stream?id=${id}`
 
             if (isFirstPlay) {
@@ -105,10 +109,8 @@ export default function Home() {
             } else {
                 audioRef.current.volume = 0.2; // Lower volume for subsequent playbacks
             }
-            if (audioRef.current) {
-                audioRef.current.pause(); // Ensure any previous audio is stopped
-                audioRef.current.src = ''; // Reset the source
-            }
+
+
 
             const loadTimeout = setTimeout(() => {
                 if (audioRef.current != null){
@@ -122,12 +124,11 @@ export default function Home() {
                 audioRef.current.play();
                 clearTimeout(loadTimeout);
                 setStartTime(Date.now());
-                console.log(`start time: ${startTime}`)
                 console.log('Audio can play through.');
             });
 
             audioRef.current.addEventListener('ended', () => {
-                play();
+                setCanPlay(true)
             });
 
         } catch (error) {
@@ -145,7 +146,6 @@ export default function Home() {
         let intervalId = setInterval(() => {
             if (Math.abs(audio.volume - targetVolume) < 0.01) {
                 clearInterval(intervalId);
-                setSongVolume(targetVolume);
                 if(audioToPlay){
                     audioToPlay.play();
                     audioToPlay.volume = 1;
@@ -168,7 +168,7 @@ export default function Home() {
                 value={playlist}
                 onChange={(e) => setPlaylist(e.target.value)}
             />
-            <button onClick={() => play()}>Play</button>
+            <button onClick={() => setCanPlay(true)}>Play</button>
         </div>
     );
 }

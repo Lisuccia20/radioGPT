@@ -1,19 +1,27 @@
-import ytdl from '@distube/ytdl-core';
+import YTDlpWrap from 'yt-dlp-wrap';
 import { Readable } from 'stream';
+import stream from 'youtube-audio-stream'
 
 export default async function handler(req, res) {
     const { id } = req.query;
 
     try{
-        const audio = ytdl(`https://www.youtube.com/watch?v=${id}`, {
-            quality: 'highestaudio',
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-        })
+        let githubReleasesData = await YTDlpWrap.getGithubReleases(1, 5);
 
-        const stream = Readable.from(audio);
-        stream.pipe(res);
+        await YTDlpWrap.downloadFromGithub(
+            'ytp-dlp-stream/binary',
+            '2025.02.19',
+            'linux'
+        );
+
+
+        const ytDlp = new YTDlpWrap('ytp-dlp-stream/binary');
+        let readableStream = ytDlp.execStream([
+            `https://www.youtube.com/watch?v=${id}`,
+            '-f',
+            'best[ext=mp4]',
+        ]);
+        readableStream.pipe(res);
     }catch(e){
         console.log(e)
         res.status(500).json({e})
