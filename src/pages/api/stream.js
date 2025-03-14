@@ -6,15 +6,6 @@ export default async function handler(req, res) {
     const { id } = req.query;
 
     try{
-        let githubReleasesData = await YTDlpWrap.getGithubReleases(1, 5);
-
-        await YTDlpWrap.downloadFromGithub(
-            'ytp-dlp-stream/binary',
-            '2025.02.19',
-            'linux'
-        );
-
-
         const ytDlp = new YTDlpWrap('ytp-dlp-stream/binary');
         let readableStream = ytDlp.execStream([
             `https://www.youtube.com/watch?v=${id}`,
