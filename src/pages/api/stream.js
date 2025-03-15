@@ -10,7 +10,7 @@ export default async function handler(req, res) {
         const customHeaders = 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:112.0) Gecko/20100101 Chrome/112.0.5615.49 Safari/537.36';
 
         // Path to the exported cookies file (change this to the correct path)
-        const cookiesPath = '/path/to/cookies.txt';
+        const cookiesPath = 'youtube_cookies.txt';
 
         // Execute the stream with yt-dlp and pass the custom headers and cookies
         let readableStream = ytDlpWrap.execStream([
