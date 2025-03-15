@@ -12,6 +12,7 @@
     "@codyduong/ytmusicapi": "^0.4.6",
     "@distube/ytdl-core": "^4.16.4",
     "@steepleinc/youtubei.js": "^13.0.0",
+    "@ybd-project/ytdl-core": "^6.0.8",
     "axios": "^1.8.3",
     "dotenv": "^16.4.7",
     "https-proxy-agent": "^7.0.6",
