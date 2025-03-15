@@ -9,12 +9,20 @@ export default async function handler(req, res) {
         const ytDlpWrap = new YTDlpWrap('ytp-dlp-stream/binary');
         const url = `https://www.youtube.com/watch?v=${id}`;
 
-        // Path to the cookies file
-        const cookiesPath = path.resolve('www.youtube.com_cookies.txt');
+        // Path to the original cookies file
+        const originalCookiesPath = path.resolve('www.youtube.com_cookies.txt');
 
         // Verify the cookies file exists
-        if (!fs.existsSync(cookiesPath)) {
+        if (!fs.existsSync(originalCookiesPath)) {
             throw new Error('Cookies file not found');
+        }
+
+        // Create a copy of the cookies file
+        const cookiesCopyPath = path.resolve('cookies_copy.txt');
+        try {
+            fs.copyFileSync(originalCookiesPath, cookiesCopyPath);
+        } catch (err) {
+            throw new Error(`Failed to copy cookies file: ${err.message}`);
         }
 
         // Path to the custom headers file
@@ -22,12 +30,17 @@ export default async function handler(req, res) {
 
         // Create a custom headers file
         const customHeaders = 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:112.0) Gecko/20100101 Chrome/112.0.5615.49 Safari/537.36';
+        try {
+            fs.writeFileSync(headersPath, customHeaders);
+        } catch (err) {
+            throw new Error(`Failed to write headers file: ${err.message}`);
+        }
 
         // Execute the stream with yt-dlp
         let readableStream = ytDlpWrap.execStream([
             url,
             '-f', 'best[ext=mp4]',  // Get the best mp4 format
-            '--cookies', cookiesPath,
+            '--cookies', cookiesCopyPath,
         ]);
 
         // Set response headers
