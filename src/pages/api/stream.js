@@ -16,8 +16,7 @@ export default async function handler(req, res) {
         let readableStream = ytDlpWrap.execStream([
             url,
             '-f', 'best[ext=mp4]',  // Get the best mp4 format
-            '-u', 'radioGPT2@gmail.com',
-            '-p', 'Lisawow3',
+            '--cookies', cookiesPath,
             '--add-headers', customHeaders  // Use custom User-Agent header
         ]);
 
