@@ -8,8 +8,8 @@ export default async function handler(req, res) {
             url,
             '-f',
             'best[ext=mp4]',
-            '--cookies-from-browser',
-            'chrome'
+            '--cookies=cookies.txt',
+            ''
         ]);
         readableStream.pipe(res);
     } catch (e) {
