@@ -8,6 +8,7 @@ export default async function handler(req, res) {
             output: '-', // Output to stdout
             extractAudio: true,
             audioFormat: 'mp3',
+            cookiesFromBrowser: 'chrome:~/.var/app/com.google.Chrome/'
         }, { stdio: ['ignore', 'pipe', 'pipe'] });
         process.pipe(res);
     } catch (e) {
