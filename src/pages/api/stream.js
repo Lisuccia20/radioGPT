@@ -22,14 +22,13 @@ export default async function handler(req, res) {
 
         // Create a custom headers file
         const customHeaders = 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:112.0) Gecko/20100101 Chrome/112.0.5615.49 Safari/537.36';
-        fs.writeFileSync(headersPath, customHeaders);
 
         // Execute the stream with yt-dlp
         let readableStream = ytDlpWrap.execStream([
             url,
             '-f', 'best[ext=mp4]',  // Get the best mp4 format
             '--cookies', cookiesPath,
-            '--add-headers', headersPath  // Use custom headers file
+            '--add-headers', customHeaders  // Use custom headers file
         ]);
 
         // Set response headers
