@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         let readableStream = ytDlpWrap.execStream([
             url,
             '-f', 'best[ext=mp4]',  // Get the best mp4 format
-            '--cookies', cookiesPath,  // Specify the cookies file
+            '--cookies-from-browser', 'chrome',  // Specify the cookies file
             '--add-headers', customHeaders  // Use custom User-Agent header
         ]);
 
