@@ -28,7 +28,6 @@ export default async function handler(req, res) {
             url,
             '-f', 'best[ext=mp4]',  // Get the best mp4 format
             '--cookies', cookiesPath,
-            '--add-headers', customHeaders  // Use custom headers file
         ]);
 
         // Set response headers
