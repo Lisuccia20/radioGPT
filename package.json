@@ -28,7 +28,7 @@
     "spotify-dl": "^1.1.2",
     "spottydl-better": "^0.3.121",
     "youtube-audio-stream": "^0.3.61",
-    "youtube-dl": "^3.5.0",
+    "youtube-dl-exec": "^3.0.19",
     "yt-dlp-wrap": "^2.3.12",
     "yt-stream": "^1.7.4",
     "ytdl-core": "^4.11.5",
