@@ -66,6 +66,7 @@ export default async function handler(req, res) {
 
         // Using Promise.all for better performance
         const songs = await Promise.all(playlistSongs.data.items.map(async (item) => {
+            try {
                 const videoDetails = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
                     params: {
                         key: apiKey,
@@ -89,9 +90,16 @@ export default async function handler(req, res) {
                     author: item.snippet.videoOwnerChannelTitle,
                     image: imageDetails.data.items[0].snippet.thumbnails.maxres.url,
                 };
+            } catch (error) {
+                console.error('Error fetching details for video ID', item.snippet.resourceId.videoId, error);
+                return null; // Return null for any video where details cannot be fetched
+            }
         }));
-        const shuffle = shuffleArray(songs)
-        res.status(200).json({ songs: shuffle });
+
+        // Filter out any null results (in case of failed API calls)
+        const validSongs = songs.filter(song => song !== null);
+        const shuffledSongs = shuffleArray(validSongs);
+        res.status(200).json({ songs: shuffledSongs });
     } catch (error) {
         console.error('Error in handler:', error);
         res.status(500).json({ error: 'Internal server error' });
