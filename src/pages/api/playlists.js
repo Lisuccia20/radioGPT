@@ -1,8 +1,5 @@
 import axios from "axios";
 
-
-
-
 function iso8601ToSeconds(isoDuration) {
     const regex = /P(?:([\d.]+)Y)?(?:([\d.]+)M)?(?:([\d.]+)D)?(?:T(?:([\d.]+)H)?(?:([\d.]+)M)?(?:([\d.]+)S)?)?/;
     const matches = regex.exec(isoDuration);
@@ -26,55 +23,74 @@ function iso8601ToSeconds(isoDuration) {
     return totalSeconds;
 }
 
-
-
 export default async function handler(req, res) {
-    const { query } = req.query;
-    const apiKey = process.env.NEXT_PUBLIC_YT_API_KEY;
+    try {
+        const { query } = req.query;
+        const apiKey = process.env.NEXT_PUBLIC_YT_API_KEY;
 
-    if (!query) {
-        return res.status(400).json({ error: 'Query parameter is required' });
-    }
-
-    const url = new URL(query);
-    const playlistId = url.searchParams.get("list");
-
-    // Fetch playlist songs
-    const playlistSongs = await axios.get(`https://www.googleapis.com/youtube/v3/playlistItems`, {
-        params: {
-            key: apiKey,
-            part: 'snippet',
-            playlistId: playlistId,
-            maxResults: 100,
+        if (!query) {
+            return res.status(400).json({ error: 'Query parameter is required' });
         }
-    });
 
-    const songs = [];
-    for (const item of playlistSongs.data.items) {
-        const data = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
-            params: {
-                key: apiKey,
-                part: 'contentDetails',
-                id: item.snippet.resourceId.videoId,
-            }
-        })
-        const dataImage = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+        if (!apiKey) {
+            return res.status(500).json({ error: 'API key is missing' });
+        }
+
+        const url = new URL(query);
+        const playlistId = url.searchParams.get("list");
+
+        // Fetch playlist songs
+        const playlistSongs = await axios.get(`https://www.googleapis.com/youtube/v3/playlistItems`, {
             params: {
                 key: apiKey,
                 part: 'snippet',
-                id: item.snippet.resourceId.videoId,
+                playlistId: playlistId,
+                maxResults: 100,
             }
-        })
-        songs.push({
-            id: item.snippet.resourceId.videoId,
-            title: item.snippet.title,
-            duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
-            author: item.snippet.videoOwnerChannelTitle,
-            image: dataImage.data.items[0].snippet.thumbnails.maxres.url
         });
+
+        if (!playlistSongs.data.items || playlistSongs.data.items.length === 0) {
+            return res.status(404).json({ error: 'No songs found in this playlist' });
+        }
+
+        // Using Promise.all for better performance
+        const songs = await Promise.all(playlistSongs.data.items.map(async (item) => {
+            try {
+                const videoDetails = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+                    params: {
+                        key: apiKey,
+                        part: 'contentDetails',
+                        id: item.snippet.resourceId.videoId,
+                    }
+                });
+
+                const imageDetails = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+                    params: {
+                        key: apiKey,
+                        part: 'snippet',
+                        id: item.snippet.resourceId.videoId,
+                    }
+                });
+
+                return {
+                    id: item.snippet.resourceId.videoId,
+                    title: item.snippet.title,
+                    duration: iso8601ToSeconds(videoDetails.data.items[0].contentDetails.duration),
+                    author: item.snippet.videoOwnerChannelTitle,
+                    image: imageDetails.data.items[0].snippet.thumbnails.maxres.url,
+                };
+            } catch (error) {
+                console.error('Error fetching details for video ID', item.snippet.resourceId.videoId, error);
+                return null; // Return null for any video where details cannot be fetched
+            }
+        }));
+
+        // Filter out any null results (in case of failed API calls)
+        const validSongs = songs.filter(song => song !== null);
+
+        res.status(200).json({ songs: validSongs });
+    } catch (error) {
+        console.error('Error in handler:', error);
+        res.status(500).json({ error: 'Internal server error' });
     }
-
-
-    res.status(200).json({songs})
 }
-
