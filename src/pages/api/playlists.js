@@ -59,7 +59,7 @@ export default async function handler(req, res) {
     const randomIndex = Math.floor(Math.random() * songsIds.length);
     const randomSongId = songsIds[randomIndex];
 
-    const duration = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+    const data = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
         params: {
             key: apiKey,
             part: 'contentDetails',
@@ -71,7 +71,9 @@ export default async function handler(req, res) {
     res.status(200).json({
         id: randomSongId,
         filename: songsNames[randomIndex],
-        duration: iso8601ToSeconds(duration.data.items[0].contentDetails.duration),
+        duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
+        image: data.data.items[0].thumbnail,
+
     })
 }
 

@@ -23,6 +23,7 @@
     "openai": "^4.87.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-native-track-player": "^4.1.1",
     "ruhend-scraper": "^9.0.0",
     "s-ytdl": "^1.1.4",
     "spotify-dl": "^1.1.2",

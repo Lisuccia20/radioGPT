@@ -154,7 +154,7 @@ export default function Home() {
                 value={playlist}
                 onChange={(e) => setPlaylist(e.target.value)}
             />
-            <button onClick={() => setCanPlay(true)}>Play</button>
+            <button className={styles.button} onClick={() => setCanPlay(true)}>Play</button>
         </div>
     );
 }
