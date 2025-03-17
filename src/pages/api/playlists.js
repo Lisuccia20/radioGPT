@@ -1,5 +1,16 @@
 import axios from "axios";
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        // Pick a random index from 0 to i
+        const randomIndex = Math.floor(Math.random() * (i + 1));
+
+        // Swap elements array[i] and array[randomIndex]
+        [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
+    }
+    return array;
+}
+
 function iso8601ToSeconds(isoDuration) {
     const regex = /P(?:([\d.]+)Y)?(?:([\d.]+)M)?(?:([\d.]+)D)?(?:T(?:([\d.]+)H)?(?:([\d.]+)M)?(?:([\d.]+)S)?)?/;
     const matches = regex.exec(isoDuration);
@@ -79,16 +90,12 @@ export default async function handler(req, res) {
                     author: item.snippet.videoOwnerChannelTitle,
                     image: imageDetails.data.items[0].snippet.thumbnails.maxres.url,
                 };
-            } catch (error) {
-                console.error('Error fetching details for video ID', item.snippet.resourceId.videoId, error);
-                return null; // Return null for any video where details cannot be fetched
+            }catch(err) {
+                return res.status(500).json({ error: err });
             }
         }));
-
-        // Filter out any null results (in case of failed API calls)
-        const validSongs = songs.filter(song => song !== null);
-
-        res.status(200).json({ songs: validSongs });
+        const shuffle = shuffleArray(songs)
+        res.status(200).json({ songs: shuffle });
     } catch (error) {
         console.error('Error in handler:', error);
         res.status(500).json({ error: 'Internal server error' });
