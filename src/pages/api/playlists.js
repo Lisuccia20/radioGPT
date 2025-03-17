@@ -78,7 +78,7 @@ export default async function handler(req, res) {
         id: randomSongId,
         filename: songsNames[randomIndex],
         duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
-        data: dataImage.data
+        image: dataImage.data.items[0].snippet.thumbnails.maxres.url
     })
 }
 
