@@ -66,13 +66,19 @@ export default async function handler(req, res) {
             id: randomSongId,
         }
     })
-    console.log(data)
+    const dataImage = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+        params: {
+            key: apiKey,
+            part: 'snippet',
+            id: randomSongId,
+        }
+    })
 
     res.status(200).json({
         id: randomSongId,
         filename: songsNames[randomIndex],
         duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
-        data: data.data.items[0]
+        data: dataImage.data
     })
 }
 
