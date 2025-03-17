@@ -66,14 +66,13 @@ export default async function handler(req, res) {
             id: randomSongId,
         }
     })
-
+    console.log(data)
 
     res.status(200).json({
         id: randomSongId,
         filename: songsNames[randomIndex],
         duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
-        image: data.data.items[0].thumbnail,
-
+        data: data.data.items[0]
     })
 }
 
