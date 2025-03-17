@@ -49,36 +49,32 @@ export default async function handler(req, res) {
         }
     });
 
-    const songsIds = [];
-    const songsNames = [];
-    playlistSongs.data.items.forEach((item) => {
-        songsIds.push(item.snippet.resourceId.videoId);
-        songsNames.push(`${item.snippet.title} - ${item.snippet.videoOwnerChannelTitle}`);
-    });
+    const songs = [];
+    for (const item of playlistSongs.data.items) {
+        const data = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+            params: {
+                key: apiKey,
+                part: 'contentDetails',
+                id: item.snippet.resourceId.videoId,
+            }
+        })
+        const dataImage = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+            params: {
+                key: apiKey,
+                part: 'snippet',
+                id: item.snippet.resourceId.videoId,
+            }
+        })
+        songs.push({
+            id: item.snippet.resourceId.videoId,
+            title: item.snippet.title,
+            duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
+            author: item.snippet.videoOwnerChannelTitle,
+            image: dataImage.data.items[0].snippet.thumbnails.maxres.url
+        });
+    }
 
-    const randomIndex = Math.floor(Math.random() * songsIds.length);
-    const randomSongId = songsIds[randomIndex];
 
-    const data = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
-        params: {
-            key: apiKey,
-            part: 'contentDetails',
-            id: randomSongId,
-        }
-    })
-    const dataImage = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
-        params: {
-            key: apiKey,
-            part: 'snippet',
-            id: randomSongId,
-        }
-    })
-
-    res.status(200).json({
-        id: randomSongId,
-        filename: songsNames[randomIndex],
-        duration: iso8601ToSeconds(data.data.items[0].contentDetails.duration),
-        image: dataImage.data.items[0].snippet.thumbnails.maxres.url
-    })
+    res.status(200).json(songs)
 }
 
