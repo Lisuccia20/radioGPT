@@ -39,7 +39,7 @@ export default async function handler(req, res) {
         // Execute the stream with yt-dlp
         let readableStream = ytDlpWrap.execStream([
             url,
-            '-f', 'best[ext=mp4]',  // Get the best mp4 format
+            '-f', 'best[ext=mp3]',  // Get the best mp3 format
             '--cookies', cookiesCopyPath,
         ]);
 
