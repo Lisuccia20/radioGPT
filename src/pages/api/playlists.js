@@ -1,6 +1,6 @@
-import axios from "axios";
 import * as ytstream from 'yt-stream'
-
+const fetch = require('isomorphic-unfetch')
+const { getData } = require('spotify-url-info')(fetch)
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         // Pick a random index from 0 to i
@@ -36,8 +36,14 @@ function iso8601ToSeconds(isoDuration) {
 }
 
 export default async function handler(req, res) {
+
+
+
+
+
     try {
         const { query } = req.query;
+
         const apiKey = process.env.NEXT_PUBLIC_YT_API_KEY;
 
         if (!query) {
@@ -48,15 +54,41 @@ export default async function handler(req, res) {
             return res.status(500).json({ error: 'API key is missing' });
         }
 
+        if (query.includes('spotify')) {
+            try {
+                const playlistSongs = await getData(query, {
+                    headers: {
+                        'user-agent': 'googlebot'
+                    }
+                });
+
+                const trackList = playlistSongs.trackList;
+                const details = []
+                const track1 = await ytstream.search(`${trackList[0].title} - ${trackList[0].subtitle}`)
+                res.status(200).json(track1)
+                for (const song of trackList) {
+                    const data = await ytstream.search(`${song.title} - ${song.subtitle}`)
+                    details.push({
+                        title: song.title,
+                        id: data.id,
+                        duration: song.duration,
+                        author: song.subtitle,
+                        image: data.thumbnail,
+                    })
+                }
+                const shuffledDetails = shuffleArray(details);
+                res.status(200).json(shuffledDetails);
+
+            } catch (error) {
+                console.error('Error fetching playlist songs:', error);
+                res.status(500).json({ error: error.message });
+            }
+        }
+
         // const url = new URL(query);
         // const playlistId = url.searchParams.get("list");
         ytstream.setPreference('scrape');
-        try {
-            const playlistSongs = await ytstream.getPlaylist(query);
-            res.status(200).json({ songs: playlistSongs.videos });
-        }catch (e) {
-            res.status(500).json({ error: e });
-        }
+        const playlistSongs = await ytstream.getPlaylist(query);
         // Fetch playlist songs
         const songs = playlistSongs.videos;
         const details = []
