@@ -1,13 +1,28 @@
 import YTDlpWrap from 'yt-dlp-wrap';
 import fs from 'fs';
 import path from 'path';
+import spotiyt from 'spotify-to-ytmusic'
 
 export default async function handler(req, res) {
+
     const { id } = req.query;
 
     try {
-        const ytDlpWrap = new YTDlpWrap('ytp-dlp-stream/binary');
-        const url = `https://www.youtube.com/watch?v=${id}`;
+        let url = ''
+        if(id.includes('spotify:')){
+            const cleanId = id.replace('spotify:', '');
+            const spoti = await spotiyt({
+                clientID: '081ca37fe4774c3e9b62383103833991',
+                clientSecret: process.env.CLIENT_SECRET,
+            });
+
+            url = await spoti(cleanId)
+
+        }else{
+            url = `https://www.youtube.com/watch?v=${id}`;
+        }
+        const ytDlpWrap = new YTDlpWrap('./yt-dlp');
+
 
         // Path to the original cookies file
         const originalCookiesPath = path.resolve('www.youtube.com_cookies.txt');
@@ -39,8 +54,7 @@ export default async function handler(req, res) {
         // Execute the stream with yt-dlp
         let readableStream = ytDlpWrap.execStream([
             url,
-            '-f', 'best[ext=mp3]',  // Get the best mp3 format
-            '--cookies', cookiesCopyPath,
+            '--cookies-from-browser', 'chrome',
         ]);
 
         // Set response headers
@@ -54,6 +68,7 @@ export default async function handler(req, res) {
             console.error('Stream error:', error);
             res.status(500).json({ error: 'Stream error' });
         });
+
 
     } catch (e) {
         console.error("Error streaming the video:", e);

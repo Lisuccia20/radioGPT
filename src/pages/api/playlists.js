@@ -1,6 +1,5 @@
-import * as ytstream from 'yt-stream'
-const fetch = require('isomorphic-unfetch')
-const { getData } = require('spotify-url-info')(fetch)
+import play from 'play-dl';
+import ytstream from 'yt-stream';
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         // Pick a random index from 0 to i
@@ -12,35 +11,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function iso8601ToSeconds(isoDuration) {
-    const regex = /P(?:([\d.]+)Y)?(?:([\d.]+)M)?(?:([\d.]+)D)?(?:T(?:([\d.]+)H)?(?:([\d.]+)M)?(?:([\d.]+)S)?)?/;
-    const matches = regex.exec(isoDuration);
-
-    const years = parseFloat(matches[1] || 0);
-    const months = parseFloat(matches[2] || 0);
-    const days = parseFloat(matches[3] || 0);
-    const hours = parseFloat(matches[4] || 0);
-    const minutes = parseFloat(matches[5] || 0);
-    const seconds = parseFloat(matches[6] || 0);
-
-    // Convert everything to seconds
-    const totalSeconds =
-        seconds +
-        minutes * 60 +
-        hours * 3600 +
-        days * 86400 +
-        months * 2628000 + // approx. 30.44 days per month
-        years * 31536000;  // approx. 365.25 days per year
-
-    return totalSeconds;
-}
-
 export default async function handler(req, res) {
-
-
-
-
-
     try {
         const { query } = req.query;
 
@@ -56,28 +27,38 @@ export default async function handler(req, res) {
 
         if (query.includes('spotify')) {
             try {
-                const playlistSongs = await getData(query, {
-                    headers: {
-                        'user-agent': 'googlebot'
-                    }
-                });
 
-                const trackList = playlistSongs.trackList;
+                if (play.is_expired()) {
+                    await play.refreshToken() // This will check if access token has expired or not. If yes, then refresh the token.
+                }
+
+
+                const sp_data = await play.spotify(query);
+                const tracks = await sp_data.all_tracks();
                 const details = []
-                const track1 = await ytstream.search(`${trackList[0].title} - ${trackList[0].subtitle}`)
-                res.status(200).json(track1)
-                for (const song of trackList) {
-                    const data = await ytstream.search(`${song.title} - ${song.subtitle}`)
+                for (const song of tracks) {
                     details.push({
-                        title: song.title,
-                        id: data.id,
-                        duration: song.duration,
-                        author: song.subtitle,
-                        image: data.thumbnail,
+                        title: song.name,
+                        id: `spotify:${song.url}`,
+                        duration: song.durationInSec,
+                        author: song.artists[0].name,
+                        image: {
+                            url: song.thumbnail.url
+                        },
                     })
                 }
                 const shuffledDetails = shuffleArray(details);
                 res.status(200).json(shuffledDetails);
+
+                //
+                // const playlistSongs = await getData(query, {
+                //     headers: {
+                //         'user-agent': 'googlebot'
+                //     }
+                // });
+                //
+                // const trackList = playlistSongs.trackList;
+
 
             } catch (error) {
                 console.error('Error fetching playlist songs:', error);
@@ -98,7 +79,7 @@ export default async function handler(req, res) {
                 id: song.video_id,
                 duration: song.length,
                 author: song.channel.author,
-                image: song.thumbnail[3],
+                image: song.thumbnails[3],
             })
         })
         const shuffledDetails = shuffleArray(details);
