@@ -1,0 +1,11 @@
+{
+    "client_id": "081ca37fe4774c3e9b62383103833991",
+    "client_secret": "f2047ba5d23a43d8b663ac739e1ad56c",
+    "redirect_url": "https://radiogpt.me",
+    "access_token": "BQCytKV6mOLvN_YjJ4W8FTohCt_-fTpnH7xEFUBHannlax_TOBaih1XGH2WyPLANjDQutwgh55BPEP6V3AWpBURf8Gi_p1ThRPjAwfxW99GZx4t3EGkxrvbVlO81DdTLXrIQEg9EPGUB8StZJ9mGAzAEswdFDjEhftjmOUdG3OladTM0ogw-506sSXhEJ0V6Je7XKTiUBM05Tyb_Ng0",
+    "refresh_token": "AQCVHR__nWItZXSOYgRAnNVl_93Kbi1C3DEBt4i-mCaL0QGh3bI0dat5yUUwHnFjyaDEBYdenWys5Vo811MkyT20pCCxx4jmnV3dpiWvXLWYzusxEjgZj0iSGQEUzTgvX50",
+    "expires_in": 3600,
+    "expiry": 1742565329473,
+    "token_type": "Bearer",
+    "market": "IT"
+}
